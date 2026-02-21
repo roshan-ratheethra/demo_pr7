@@ -1,0 +1,23 @@
+# VS Code settings
+.vscode/
+
+# Compiled class files
+*.class
+
+# Java archives
+*.jar
+
+# Log files
+*.log
+
+# Other file exclusions
+.DS_Store
+*.inl
+
+# Build folders
+.idea/
+target/
+bin/
+out/
+build/
+dist/

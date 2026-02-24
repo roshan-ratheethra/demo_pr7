@@ -1,17 +1,25 @@
-public class UC3 {
-    public static void main(String[] args) {
-        // Each line of the banner as arrays of segments
-        String[] line1 = {"OOOO", "OOOO", "PPPPP", "SSSS"};
-        String[] line2 = {"O  O", "O  O", "P   P", "S   "};
-        String[] line3 = {"O  O", "O  O", "PPPPP", "SSSS"};
-        String[] line4 = {"O  O", "O  O", "P   ", "    S"};
-        String[] line5 = {"OOOO", "OOOO", "P   ", " SSSS"};
+public class UC_4 {
 
-        // Join with spaces to form each line
-        System.out.println(String.join("   ", line1));
-        System.out.println(String.join("   ", line2));
-        System.out.println(String.join("   ", line3));
-        System.out.println(String.join("   ", line4));
-        System.out.println(String.join("   ", line5));
+    // Function to print banner using array + loop
+    public static void printBanner() {
+        // Store all banner lines in a single array
+        String[] bannerLines = {
+            String.join("   ", "  *****  ", "  *****  ", " ****** ", "  ***** "),
+            String.join("   ", " **   ** ", " **   ** ", " **   **", " **     "),
+            String.join("   ", "**     **", "**     **", " **   **", " **     "),
+            String.join("   ", "**     **", "**     **", " ****** ", "  ****  "),
+            String.join("   ", "**     **", "**     **", " **     ", "     ** "),
+            String.join("   ", " **   ** ", " **   ** ", " **     ", " **   **"),
+            String.join("   ", "  *****  ", "  *****  ", " **     ", "  ***** ")
+        };
+
+        // Loop through and print each line
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+
+    public static void main(String[] args) {
+        printBanner();
     }
 }
